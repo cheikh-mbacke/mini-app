@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter produits</title>
+</head>
+<!--  Amazon Nikon D7000, 
+    https://images-na.ssl-images-amazon.com/images/I/71yf785aBmL._AC_SX466_.jpg 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum placeat maiores ex nam omnis.
+-->
+<body>
+    <article>
+        <h3>Ajouter un produit</h3>
+        <form id="formSubmit"> 
+            <div>
+                <label for="productName">Nom : </label>
+                <input type="text" id="productName" required name="productName" value="Nikon D7000">
+            </div>
+            <div>
+                <label for="productDscription">Description : </label> <br />
+                <textarea name="productDscription" required id="productDscription" cols="30" rows="10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum placeat maiores ex nam omnis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum placeat maiores ex nam omnis.
+                </textarea>
+            </div>
+            <div>
+                <label for="productImg">Adresse image : </label>
+                <input type="text" id="productImg" name="productImg" required value="https://images-na.ssl-images-amazon.com/images/I/71yf785aBmL._AC_SX466_.jpg">
+            </div>
+            <div>
+                <label for="productPrice">Prix : </label>
+                <input type="number" required name="productPrice" value="500">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </article>
+    <script src="addProduct.js"></script>
+</body>
+</html>
